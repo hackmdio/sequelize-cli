@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## Future
 
+## v6.2.1 - 14th, Apr 2021
+
+### Fixed
+- fix: running single seeder not terminate program
+
 ## v6.2.0 - 5th, July 2020
 
 ### Feature
