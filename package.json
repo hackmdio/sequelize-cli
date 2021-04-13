@@ -1,7 +1,7 @@
 {
   "name": "@hackmd/sequelize-cli",
-  "version": "6.2.1",
-  "description": "The Sequelize CLI",
+  "version": "6.2.3",
+  "description": "The HackMD forked version of Sequelize CLI (origin: https://www.npmjs.com/package/sequelize-cli)",
   "bin": {
     "sequelize": "./lib/sequelize",
     "sequelize-cli": "./lib/sequelize"
@@ -60,13 +60,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sequelize/cli.git"
+    "url": "git://github.com/hackmdio/sequelize-cli.git"
   },
   "keywords": [
     "sequelize",
     "cli"
   ],
   "contributors": [
+    {
+      "name": "BoHong Li",
+      "email": "a60814billy@gmail.com"
+    },
     {
       "name": "Sascha Depold",
       "email": "sascha@depold.com"
@@ -81,10 +85,6 @@
     }
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sequelize/cli/issues"
-  },
-  "homepage": "https://github.com/sequelize/cli",
   "engines": {
     "node": ">=10.0.0"
   }
