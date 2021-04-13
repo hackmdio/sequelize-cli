@@ -27,7 +27,7 @@ function formatAttributes(attribute) {
       dataValues: null,
     };
   } else if (split.length === 3) {
-    const validValues = /^\{(,? ?[A-z0-9 ]+)+\}$/;
+    const validValues = /^\{(,? ?("|')?[A-z0-9 ]+("|')?)+\}$/;
     const isValidFunction =
       validAttributeFunctionType.indexOf(split[1].toLowerCase()) !== -1;
     const isValidValue =
@@ -52,7 +52,7 @@ function formatAttributes(attribute) {
         dataValues: split[2]
           .replace(/(^\{|\}$)/g, '')
           .split(/\s*,\s*/)
-          .map((s) => `'${s}'`)
+          .map((s) => `'${s.replace(/['"]/g, '')}'`)
           .join(', '),
       };
     }
