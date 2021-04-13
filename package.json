@@ -1,5 +1,5 @@
 {
-  "name": "sequelize-cli",
+  "name": "@hackmd/sequelize-cli",
   "version": "6.2.0",
   "description": "The Sequelize CLI",
   "bin": {
